@@ -1,16 +1,183 @@
 ---
-
+layout: "../layouts/Layout.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<style>
+  body {
+    background: linear-gradient(120deg, #181c2a 60%, #2a2d3a 100%);
+    min-height: 100vh;
+    background: url('/wyfm.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+  .cv-container {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    background: rgba(24, 28, 42, 0.92);
+    color: #eaeaea;
+    max-width: 820px;
+    margin: 2.5rem auto;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+    padding: 2.5rem 3rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .cv-container::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('/cwy.jpg'), linear-gradient(120deg, #181c2a 60%, #2a2d3a 100%);
+    opacity: 0.18;
+    z-index: 0;
+    background-size: cover;
+    background-blend-mode: lighten;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 2px solid #3a3d4a;
+    margin-bottom: 1.7rem;
+    padding-bottom: 1.2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .contact {
+    font-size: 1.05rem;
+    color: #eaeaea;
+    margin-top: 0.5rem;
+    opacity: 0.85;
+  }
+  .section {
+    margin-bottom: 1.7rem;
+    position: relative;
+    z-index: 1;
+  }
+  .section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #b6cfff;
+    margin-bottom: 0.7rem;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 4px #181c2a;
+  }
+  ul {
+    padding-left: 1.2rem;
+  }
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+  }
+  .skill {
+    background: rgba(182, 207, 255, 0.18);
+    color: #b6cfff;
+    border-radius: 8px;
+    padding: 0.35rem 1rem;
+    font-size: 1rem;
+    box-shadow: 0 1px 4px #181c2a;
+  }
+  .links a {
+    color: #b6cfff;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .links a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #6299d0ff;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px #181c2a;
+  }
+</style>
+<div class="cv-container">
+  <div class="header">
+    <div class="name">Jos&eacute; Ismael Hern&aacute;ndez Del &Aacute;ngel</div>
+    <div class="contact">
+      Tampico, Tamaulipas, México | Tel&eacute;fono: 833 309 4442 | Email: isma550.hdz95@gmail.com
+    </div>
+    <div class="links">
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="https://github.com/IsmaelDelAngel550" target="_blank">GitHub</a>
+      <a href="https://www.instagram.com/ismaelhda_05?igsh=eDVsdW43ZzlndWp5" target="_blank">Instagram</a>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Perfil Profesional</div>
+    <p>
+      Estudiante de Ingenier&iacute;a en Sistemas Computacionales en la Universidad Aut&oacute;noma de Tamaulipas (UAT), con conocimientos en desarrollo de software, dise&ntilde;o de interfaces y backend. Experiencia en lenguajes como Java, Python, C++, PHP y frameworks como Laravel, Astro, React y Vue. Interesado en el an&aacute;lisis de datos, redes y el aprendizaje continuo en tecnolog&iacute;as de sistemas.
+    </p>
+  </div>
+  <div class="section">
+    <div class="section-title">Experiencia Laboral</div>
+    <ul>
+      <li>
+        <strong>Desarrollador Web - Cl&iacute;nica de Rehabilitaci&oacute;n</strong> (2023)<br />
+        Desarrollo en equipo del sitio web para una cl&iacute;nica de rehabilitaci&oacute;n, participando en el dise&ntilde;o de interfaces y el desarrollo backend.
+      </li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Educaci&oacute;n</div>
+    <ul>
+      <li>
+        <strong>Preparatoria</strong> - CBTis 103, Especialidad en Electr&oacute;nica (2020 - 2023, c&eacute;dula profesional)
+      </li>
+      <li>
+        <strong>Ingenier&iacute;a en Sistemas Computacionales</strong> - Universidad Aut&oacute;noma de Tamaulipas (UAT) (2023 - Actual)
+      </li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Habilidades</div>
+    <div class="skills-list">
+      <span class="skill">Java</span>
+      <span class="skill">Python</span>
+      <span class="skill">C++</span>
+      <span class="skill">PHP</span>
+      <span class="skill">Laravel</span>
+      <span class="skill">SQL Server</span>
+      <span class="skill">MySQL</span>
+      <span class="skill">Astro</span>
+      <span class="skill">React</span>
+      <span class="skill">Vue</span>
+      <span class="skill">Dise&ntilde;o de interfaces</span>
+      <span class="skill">Desarrollo backend</span>
+      <span class="skill">Redes de telecomunicaciones</span>
+      <span class="skill">An&aacute;lisis de datos</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Certificaciones y Cursos</div>
+    <ul>
+      <li>Curso de Analista de Datos - Google</li>
+      <li>Programaci&oacute;n Orientada a Objetos - Aprende.org</li>
+      <li>Desarrollo Backend - Aprende.org</li>
+      <li>Redes de Telecomunicaciones - Aprende.org</li>
+      <li>Varios cursos relacionados con sistemas - Aprende.org</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Idiomas</div>
+    <ul>
+      <li>Espa&ntilde;ol (Nativo)</li>
+      <li>Ingl&eacute;s (En proceso de aprendizaje)</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Proyectos Destacados</div>
+    <ul>
+      <li>
+        <strong>Sitio de reservaciones para cl&iacute;nica de rehabilitaci&oacute;n</strong> - Desarrollo de un sistema web para gestionar reservaciones y administraci&oacute;n de pacientes, utilizando Laravel, PHP y Blade para el frontend.
+      </li>
+    </ul>
+  </div>
+</div>
