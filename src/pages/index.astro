@@ -4,7 +4,20 @@ layout: "../layouts/Layout.astro"
 
 <style>
   body {
-    background: linear-gradient(120deg, #181c2a 60%, #2a2d3a 100%);
+    background: linear-gradient(120deg, #181c2a 60%, #2a2d3    <div class="contact">
+      <span class="contact-item">
+        <img src="/logos/location.svg" alt="Ubicación" class="contact-icon" />
+        Tampico, Tamaulipas, México
+      </span>
+      <span class="contact-item">
+        <img src="/logos/phone.svg" alt="Teléfono" class="contact-icon" />
+        833 309 4442
+      </span>
+      <span class="contact-item">
+        <img src="/logos/email.svg" alt="Email" class="contact-icon" />
+        isma550.hdz95@gmail.com
+      </span>
+    </div>00%);
     min-height: 100vh;
     background: url('/wyfm.jpg');
     background-size: cover;
@@ -49,6 +62,20 @@ layout: "../layouts/Layout.astro"
     color: #eaeaea;
     margin-top: 0.5rem;
     opacity: 0.85;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .contact-icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
   }
   .section {
     margin-bottom: 1.7rem;
@@ -78,6 +105,14 @@ layout: "../layouts/Layout.astro"
     padding: 0.35rem 1rem;
     font-size: 1rem;
     box-shadow: 0 1px 4px #181c2a;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .skill img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
   }
   .links a {
     color: #b6cfff;
@@ -102,7 +137,18 @@ layout: "../layouts/Layout.astro"
   <div class="header">
     <div class="name">Jos&eacute; Ismael Hern&aacute;ndez Del &Aacute;ngel</div>
     <div class="contact">
-      Tampico, Tamaulipas, México | Tel&eacute;fono: 833 309 4442 | Email: isma550.hdz95@gmail.com
+      <span class="contact-item">
+        <img src="/logos/location.svg" alt="Ubicación" class="contact-icon" />
+        Tampico, Tamaulipas, M&eacute;xico
+      </span>
+      <span class="contact-item">
+        <img src="/logos/phone.svg" alt="Teléfono" class="contact-icon" />
+        833 309 4442
+      </span>
+      <span class="contact-item">
+        <img src="/logos/email.svg" alt="Email" class="contact-icon" />
+        isma550.hdz95@gmail.com
+      </span>
     </div>
     <div class="links">
       <a href="#" target="_blank">LinkedIn</a>
@@ -113,7 +159,7 @@ layout: "../layouts/Layout.astro"
   <div class="section">
     <div class="section-title">Perfil Profesional</div>
     <p>
-      Estudiante de Ingenier&iacute;a en Sistemas Computacionales en la Universidad Aut&oacute;noma de Tamaulipas (UAT), con conocimientos en desarrollo de software, dise&ntilde;o de interfaces y backend. Experiencia en lenguajes como Java, Python, C++, PHP y frameworks como Laravel, Astro, React y Vue. Interesado en el an&aacute;lisis de datos, redes y el aprendizaje continuo en tecnolog&iacute;as de sistemas.
+      Hola, soy estudiante de Ingenier&iacute;a en Sistemas Computacionales en la Universidad Aut&oacute;noma de Tamaulipas (UAT), con conocimientos en desarrollo de software, dise&ntilde;o de interfaces y backend. Experiencia en lenguajes como Java, Python, C++, PHP y frameworks como Laravel, Astro, React y Vue. Interesado en el an&aacute;lisis de datos, redes y el aprendizaje continuo en tecnolog&iacute;as de sistemas.
     </p>
   </div>
   <div class="section">
@@ -139,20 +185,62 @@ layout: "../layouts/Layout.astro"
   <div class="section">
     <div class="section-title">Habilidades</div>
     <div class="skills-list">
-      <span class="skill">Java</span>
-      <span class="skill">Python</span>
-      <span class="skill">C++</span>
-      <span class="skill">PHP</span>
-      <span class="skill">Laravel</span>
-      <span class="skill">SQL Server</span>
-      <span class="skill">MySQL</span>
-      <span class="skill">Astro</span>
-      <span class="skill">React</span>
-      <span class="skill">Vue</span>
-      <span class="skill">Dise&ntilde;o de interfaces</span>
-      <span class="skill">Desarrollo backend</span>
-      <span class="skill">Redes de telecomunicaciones</span>
-      <span class="skill">An&aacute;lisis de datos</span>
+      <span class="skill">
+        <img src="/logos/java.svg" alt="Java logo" />
+        Java
+      </span>
+      <span class="skill">
+        <img src="/logos/python.svg" alt="Python logo" />
+        Python
+      </span>
+      <span class="skill">
+        <img src="/logos/cpp.svg" alt="C++ logo" />
+        C++
+      </span>
+      <span class="skill">
+        <img src="/logos/php.svg" alt="PHP logo" />
+        PHP
+      </span>
+      <span class="skill">
+        <img src="/logos/laravel.svg" alt="Laravel logo" />
+        Laravel
+      </span>
+      <span class="skill">
+        <img src="/logos/sqlserver.svg" alt="SQL Server logo" />
+        SQL Server
+      </span>
+      <span class="skill">
+        <img src="/logos/mysql.svg" alt="MySQL logo" />
+        MySQL
+      </span>
+      <span class="skill">
+        <img src="/logos/astro.svg" alt="Astro logo" />
+        Astro
+      </span>
+      <span class="skill">
+        <img src="/logos/react.svg" alt="React logo" />
+        React
+      </span>
+      <span class="skill">
+        <img src="/logos/vue.svg" alt="Vue logo" />
+        Vue
+      </span>
+      <span class="skill">
+        <img src="/logos/ui.svg" alt="UI logo" />
+        Dise&ntilde;o de interfaces
+      </span>
+      <span class="skill">
+        <img src="/logos/backend.svg" alt="Backend logo" />
+        Desarrollo backend
+      </span>
+      <span class="skill">
+        <img src="/logos/network.svg" alt="Network logo" />
+        Redes de telecomunicaciones
+      </span>
+      <span class="skill">
+        <img src="/logos/data-analysis.svg" alt="Data Analysis logo" />
+        An&aacute;lisis de datos
+      </span>
     </div>
   </div>
   <div class="section">
